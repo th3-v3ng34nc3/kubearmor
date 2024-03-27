@@ -6,14 +6,14 @@ metadata:
   namespace: ${releaseNamespace}
 data:
   values.yaml: |-
-    autoDeploy: false
+    autoDeploy: true
     
     kubearmorOperator:
       name: kubearmor-operator
       image:
         repository: kubearmor/kubearmor-operator
-        tag: latest
-      imagePullPolicy: IfNotPresent
+        tag: ""
+      imagePullPolicy: Always
       
     kubearmorConfig:
       defaultCapabilitiesPosture: audit

@@ -10,9 +10,9 @@ spec:
       chart: kubearmor-operator
       sourceRef:
         kind: HelmRepository
-        name: kubearmor/kubearmor-operator
+        name: kubearmor-operator
         namespace: ${releaseNamespace}
-      version: v1.3.2
+      version: "v1.3.2"
   interval: 15s
   install:
     remediation:
@@ -21,7 +21,7 @@ spec:
   upgrade:
     remediation:
       retries: 30
-  releaseName: 
+  releaseName: kubearmor-operator 
   valuesFrom:
     - kind: ConfigMap
       name: kubearmor-1.3.2-defaults
