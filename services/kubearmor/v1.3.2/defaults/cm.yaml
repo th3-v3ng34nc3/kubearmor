@@ -12,7 +12,7 @@ data:
       name: kubearmor-operator
       image:
         repository: kubearmor/kubearmor-operator
-        tag: ""
+        tag: v1.3.2
       imagePullPolicy: Always
       
     kubearmorConfig:
